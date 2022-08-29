@@ -10,16 +10,19 @@
       
     <title>DCP</title>
 </head>
-<body>
+<body>  
+
     <!--container geral-->
     <div class="container__geral">
 
+        <span id="menu__burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+          
         <!--cabeçalho-->
         <header class="cabecalho">
             <figure class="cabecalho__logo">                    
                 <li><a href="#"><img src="img/avatar-perfil.png" alt="">perfil</a></li>       
             </figure>
-            <nav class="cabecalho__menunavegacao">
+            <nav id="iten__menu" class="cabecalho__menunavegacao">
                 <ul class="cabecalho__menulista">
                     <span id="active" class="material-symbols-outlined">home</span>                                     
                     <li  class="cabecalho__menuitem"><a id="active" href="dcpweb.html">página inicial</a></li>
@@ -73,7 +76,7 @@
                       <div class="feed__conteudo">
                         <h2>prevenção lasa</h2>
                         <span>@prevenção__lasa 1h</span>
-                        <p>"vamos juntos compater as perdas"</p>
+                        <p>"vamos juntos combater as perdas!!"</p>
                       </div>
                     </li>
 
@@ -143,6 +146,19 @@
     </div>
     </div> 
 
-    <script type="text/javascript" src="dcoweb.js"></script> 
+    <script type="text/javascript" src="dcoweb.js"></script>
+
+    <!--script do menu hamburguer local-->
+     <script>
+        function clickMenu(){
+            if (iten__menu.style.display == 'block') {
+            iten__menu.style.display = 'none'
+
+            } else {
+                iten__menu.style.display = 'block'
+            }
+
+        }
+     </script>
 </body>
 </html>

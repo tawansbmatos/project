@@ -20,6 +20,22 @@ body{
     display: flex;
 }
 /*menu de navegação lateral do site*/
+
+#menu__burguer{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 40px;
+    display: block;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#menu__burguer:hover{
+    color: #fff;
+    background-color: #50b7f5;
+}
+
 .cabecalho{
     padding: 10px;
     margin-left: -100px;

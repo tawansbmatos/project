@@ -7,39 +7,50 @@
     }
     .cabecalho{
         display: flex;
-        flex-direction: row;
+        
     }
     .cabecalho__logo {
        position: absolute;
-       margin-left: 350px;
+       margin-left: 270px;
        margin-top: 20px;
        width: 30%;
+       
     
     }
     .cabecalho__logo a{
-        margin-bottom: 0;
+        display: none;
        
     }
     .cabecalho__logo img{
-        padding-bottom: -20px;    
+        display: none;
+           
        
     }
+    .cabecalho__menunavegacao{
+      display: none;
+    }
+    .cabecalho__menuitem:hover{
+      transform: none;
+      
+  }
     .cabecalho__menuitem a{
         font-size: 19px;
+        padding: 10px;
     }
+    
     .feed__conteudo h2{
         font-size: 17px;
     }
 
     .inp__pesquisar input {
-       margin-left: 88px;
+       display: none;
        
     }
     .inp__enviar input{
-        margin-left: 210px;
+       display: none;
     }
     .conatiner__downloads h2{
-        width: 100vw;
+       margin-left: 175px;
     }
 
 
@@ -85,16 +96,32 @@
      }
      .cards{
         display: grid;
-        grid-template-columns: 1fr;
-        margin-left: 67px;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-left: 0;
         margin-top: 20px;
         margin-bottom: -50px;  
+     }
+     .conteudo__cards{
+      width: 270px;
+      height: 160px;
+      margin-bottom: 20px;
+      
+      
+     }
+     .conteudo__cards h2{
+      font-size: 20px;
+     }
+     .conteudo__cards li {
+       font-size: 15px ;
+       margin-top: 10px;
      }
      .conteudos__2{
         width: 95%;
      }
      .conteudos__2 h2{
-        font-size: 25px;
+        font-size: 20px;
+        font-size: 900;
      }
      .conteudo2 li{
         font-size: 20px;
